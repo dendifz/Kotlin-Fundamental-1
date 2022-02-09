@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lesson1F3Homework">
+
+    <Button
+        android:id="@+id/toast_BT_L1F3HOM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_label_toast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/zero_BT_L1F3HOM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#535252"
+        android:text="Zero"
+        app:layout_constraintStart_toStartOf="@+id/toast_BT_L1F3HOM"
+        app:layout_constraintTop_toBottomOf="@+id/toast_BT_L1F3HOM" />
+
+    <Button
+        android:id="@+id/count_BT_L1F3HOM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/button_label_count"
+        app:layout_constraintStart_toStartOf="@+id/toast_BT_L1F3HOM"
+        app:layout_constraintTop_toBottomOf="@+id/zero_BT_L1F3HOM" />
+
+    <TextView
+        android:id="@+id/show_count_TV_L1F3HOM"
+        android:layout_width="269dp"
+        android:layout_height="204dp"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:text="@string/count_initial_value"
+        android:textSize="160sp"
+        app:layout_constraintBottom_toBottomOf="@+id/count_BT_L1F3HOM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/toast_BT_L1F3HOM"
+        app:layout_constraintTop_toTopOf="@+id/toast_BT_L1F3HOM"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

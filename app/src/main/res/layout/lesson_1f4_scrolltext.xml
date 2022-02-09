@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lesson1F4ScrollText">
+
+    <TextView
+        android:id="@+id/article_heading_TV_L1F4SCO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/purple_500"
+        android:padding="@dimen/padding_10dp"
+        android:text="@string/article_title"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scroll_SCV_L1F4SCO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_heading_TV_L1F4SCO">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/article_subheading_TV_L1F4SCO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="@dimen/padding_10dp"
+            android:text="@string/article_subtitle"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+
+        <TextView
+            android:id="@+id/article_text_TV_L1F4SCO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:lineSpacingExtra="5sp"
+            android:padding="@dimen/padding_10dp"
+            android:text="@string/article_text" />
+
+
+            <Button
+                android:id="@+id/add_comment_BT_L1F4SCO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/add_comment" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
